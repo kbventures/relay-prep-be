@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: relay-be-prep
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: relay-admin-prep
+      POSTGRES_PASSWORD: hellopassword
+      POSTGRES_DB: relay-prep-db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+    driver: local

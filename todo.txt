@@ -1,0 +1,11 @@
+Rate Limiting
+Throthling
+Cache
+Optimise Database Query
+Example: Analyze and optimize a slow-performing PostgreSQL query, possibly by adding indexes, rewriting the query, or implementing caching strategies.
+
+
+// Accessing DB Shell
+docker exec -it relay-be-prep /bin/bash -c "psql -U relay-admin-prep -d relay-prep-db"
+\l
+
